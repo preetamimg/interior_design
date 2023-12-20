@@ -1,0 +1,136 @@
+$heading-fs: 10%;
+$title-fs: 10%;
+$sub-title-fs: 0%;
+$content-fs: -10%;
+
+.heading {
+    font-size: calc(14px + $heading-fs);
+
+    @include xs {
+        font-size: calc(16px + $heading-fs);
+    }
+
+    @include sm {
+        font-size: calc(18px + $heading-fs);
+    }
+
+    @include md {
+        font-size: calc(20px + $heading-fs);
+    }
+
+    @include lg {
+        font-size: calc(22px + $heading-fs);
+    }
+
+    @include xl {
+        font-size: calc(24px + $heading-fs);
+    }
+
+    @include xxl {
+        font-size: calc(26px + $heading-fs);
+    }
+
+    @include xxxl {
+        font-size: calc(28px + $heading-fs);
+        // @include ellipsis(1);
+    }
+}
+
+.title {
+    font-size: calc(11px + $title-fs);
+
+    @include xs {
+        font-size: calc(12px + $title-fs);
+    }
+
+    @include sm {
+        font-size: calc(14px + $title-fs);
+    }
+
+    @include md {
+        font-size: calc(15px + $title-fs);
+    }
+
+    @include lg {
+        font-size: calc(16px + $title-fs);
+    }
+
+    @include xl {
+        font-size: calc(16px + $title-fs);
+    }
+
+    @include xxl {
+        font-size: calc(17px + $title-fs);
+    }
+
+    @include xxxl {
+        font-size: calc(18px + $title-fs);
+        // @include ellipsis(1);
+    }
+}
+
+.subTitle {
+    font-size: calc(11px + $sub-title-fs);
+
+    @include xs {
+        font-size: calc(12px + $sub-title-fs);
+    }
+
+    @include sm {
+        font-size: calc(14px + $sub-title-fs);
+    }
+
+    @include md {
+        font-size: calc(15px + $sub-title-fs);
+    }
+
+    @include lg {
+        font-size: calc(16px + $sub-title-fs);
+    }
+
+    @include xl {
+        font-size: calc(16px + $sub-title-fs);
+    }
+
+    @include xxl {
+        font-size: calc(17px + $sub-title-fs);
+    }
+
+    @include xxxl {
+        font-size: calc(18px + $sub-title-fs);
+        // @include ellipsis(1);
+    }
+}
+
+.content {
+    font-size: calc(12px + $content-fs);
+
+    @include xs {
+        font-size: calc(13px + $content-fs);
+    }
+
+    @include sm {
+        font-size: calc(14px + $content-fs);
+    }
+
+    @include md {
+        font-size: calc(15px + $content-fs);
+    }
+
+    @include lg {
+        font-size: calc(16px + $content-fs);
+    }
+
+    @include xl {
+        font-size: calc(16px + $content-fs);
+    }
+
+    @include xxl {
+        font-size: calc(17px + $content-fs);
+    }
+
+    @include xxxl {
+        font-size: calc(18px + $content-fs);
+        // @include ellipsis(1);
+    }
+}

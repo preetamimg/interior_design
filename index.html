@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/libs/swiper/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="./assets/css/style.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/libs/light/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos-master/aos.css">
+  </head>
+  <body>
+    <!-- Nav Bar Start -->
+      <nav class="navbar navbar-expand-lg navbar-dark container-fluid bg-transparent myNavBar fixed-top pt-3" aria-label="Offcanvas navbar large" id="myMainNav">
+        <div class="container">
+          <a class="navbar-brand navbarBrand" href="#">
+            <div class="logoImg">
+              <img src="./assets/img/logo2.png" alt="logoImg" class="h-100 w-100 img-fluid object-fit-cover">
+            </div>
+          </a>
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas myNavBarOffcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
+                <div class="logoImg">
+                  <img src="./assets/img/logo2.png" alt="logoImg" class="h-100 w-100 img-fluid object-fit-cover">
+                </div>
+              </h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body offcanvasBody">
+              <ul class="navbar-nav navbarNav justify-content-center gap-2 gap-xl-4 flex-grow-1">
+                <li class="nav-item navItem navItem">
+                  <a class="nav-link navLink active" aria-current="page" href="#">Home</a>
+                    <div class="hidden">
+                      <ul class="list-unstyled hiddenul d-flex flex-column gap-3">
+                        <li class="hiddenli"><a href="#aboutection" class="text-decoration-none hiddenanc">About</a></li>
+                        <li class="hiddenli"><a href="#portfolioSection" class="text-decoration-none hiddenanc">Portfolio</a></li>
+                        <li class="hiddenli"><a href="#projectSection" class="text-decoration-none hiddenanc">Designs</a></li>
+                        <li class="hiddenli"><a href="#uniqueSection" class="text-decoration-none hiddenanc">Features</a></li>
+                        <li class="hiddenli"><a href="#teamSection" class="text-decoration-none hiddenanc">Team</a></li>
+                      </ul>
+                    </div>
+                </li>
+                <li class="nav-item navItem">
+                  <a class="nav-link navLink" href="#aboutection">About</a>
+                </li>
+                <li class="nav-item navItem">
+                  <a class="nav-link navLink"  href="#portfolioSection">Portfolio</a>
+                </li>
+                <li class="nav-item navItem pages">
+                  <a class="nav-link navLink pagesLink" href="#projectSection">Designs</a>
+                </li>
+                <li class="nav-item navItem">
+                  <a class="nav-link navLink" href="#uniqueSection">Features</a>
+                </li>
+                <li class="nav-item navItem">
+                  <a class="nav-link navLink" href="#teamSection">Team</a>
+                </li>
+              </ul>
+              <div class="address">
+                <div class="addOne">Call us for any questions</div>
+                <div class="addTwo pt-1">+01 123 456 789</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- Nav Bar Ends -->
+
+    <!-- Hero Section Start -->
+      <div class="container-fluid heroSection">
+        <div class="row">
+          <div class="col-12 px-0">
+            <div class="swiper mySwiper heroSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="heroimg position-relative h-100 w-100">
+                    <img src="./assets/img/hero-1.jpg.webp" alt="heroImg" class="h-100 w-100 img-fluid object-fit-cover">
+                  </div>
+                  <div class="text position-absolute text-white top-50 start-50 translate-middle text-center mt-4 mt-sm-5">
+                      QUALITY IS NOT ONLY OUR STANDARD.
+                    <div class="mt-4">
+                      <button type="button" class="btn primaryBtn fw-bold">See Projects</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="heroimg position-relative h-100 w-100">
+                    <img src="./assets/img/hero-2.png" alt="heroImg" class="h-100 w-100 img-fluid object-fit-cover">
+                  </div>
+                  <div class="text position-absolute text-theme1 top-50 start-50 translate-middle text-center mt-4 mt-sm-5">
+                      QUALITY IS NOT ONLY OUR STANDARD.
+                    <div class="mt-4">
+                      <button type="button" class="btn primaryBtn fw-bold">See Projects</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="heroimg position-relative h-100 w-100">
+                    <img src="./assets/img/hero-3.png.webp" alt="heroImg" class="h-100 w-100 img-fluid object-fit-cover">
+                  </div>
+                  <div class="text position-absolute text-theme1 top-50 start-50 translate-middle text-center mt-4 mt-sm-5">
+                      QUALITY IS NOT ONLY OUR STANDARD.
+                    <div class="mt-4">
+                      <button type="button" class="btn primaryBtn fw-bold">See Projects</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next swipernext border-0 shadow-none text-secondary-emphasis">
+                <button type="button" class="btn primaryBtn mainbtn">
+                  <div class="mainbtnImg">
+                  <img src="./assets/img/nextbtn.svg" alt="nextbtn" class="h-100 w-100 img-fluid">
+                  </div>
+                </button>
+              </div>
+              <div class="swiper-button-prev swiperprev border-0 shadow-none text-secondary-emphasis">
+                <button type="button" class="btn primaryBtn mainbtn">
+                  <div class="mainbtnImg">
+                    <img src="./assets/img/nextbtn.svg" alt="nextbtn" class="h-100 w-100 img-fluid">
+                    </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Hero Section Ends -->
+
+    <!-- about Section Start -->
+      <div class="container-fluid aboutection py-3 py-sm-4 py-md-5" id="aboutection">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+              <div class="abouttxt" data-aos="fade-up" data-aos-duration="3000">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="head py-2 text-center text-lg-start">
+                      WHO ARE WE
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-9">
+                    <div class="subHead text-center text-lg-start">
+                      WE PROPOSE AND DISCUSS DESIGN RULES
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-11">
+                    <div class="description py-3 py-lg-4">
+                      Metasurfaces are generally designed by placing scatterers in periodic or pseudo-periodic grids. We propose and discuss design rules for functional metasurfaces with randomly placed.
+                      <div class="pt-3">
+                        Anisotropic elements that randomly sample. Quisque sit amet nisl ante. Fusce lacinia non tellus id gravida. Cras neque dolor, volutpat et hendrerit et.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 pt-3 pb-4 pb-lg-0 pt-lg-5 text-center text-lg-start">
+                    <button type="button" class="btn primaryBtn text-black aboutbtn">Learn More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-10 col-lg-6 col-xxl-5">
+              <div class="aboutImg px-4 px-sm-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="./assets/img/about-pic.jpg.webp" alt="aboutSectionImg" class="h-100 w-100 img-fluid object-fit-cover">
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    <!-- about Section Ends -->
+    
+    <!-- portfolio section Start -->
+      <div class="container-fluid portfolioSection py-5 bg-black mt-5" id="portfolioSection">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="head text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                OUR PORTFOLIO
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="subHead text-center text-white" data-aos="fade-up" data-aos-anchor-placement="bottom-bottome">
+                Latest Completed Projects
+              </div>
+            </div>
+            <div class="col-12 py-4 py-lg-5">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                  <div class="portfolioImagesection" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./assets/img/portfolio1.png.webp" alt="portfolioImg" class="h-100 w-100 img-fluid object-fit-cover">
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="row">
+                    <div class="portfoliotextsection text-center text-lg-start ps-lg-0 ps-lg-5"  data-aos="fade-down" data-aos-duration="1000">
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="date py-3 ps-4">
+                          december 2018
+                        </div>
+                      </div>
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="projectName pb-3">
+                          Pure Bedroom Architecture
+                        </div>
+                      </div>
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="description">
+                          If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                        </div>
+                      </div>
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="buttondiv pt-4 textcenter">
+                          <button type="button" class="btn primaryBtn readbtn">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 py-4 py-lg-5">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                  <div class="portfolioImagesection" data-aos="fade-up" data-aos-duration="1000"> 
+                    <img src="./assets/img/portfolio2.png.webp" alt="portfolioImg" class="h-100 w-100 img-fluid object-fit-cover">
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 order-2  order-lg-1">
+                  <div class="row">
+                    <div class="portfoliotextsection text-center text-lg-start ps-lg-0 ps-lg-5"  data-aos="fade-down" data-aos-duration="1000">
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="date py-3 ps-4">
+                          december 2018
+                        </div>
+                      </div>
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="projectName pb-3">
+                          Pure Bedroom Architecture
+                        </div>
+                      </div>
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="description">
+                          If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                        </div>
+                      </div>
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="buttondiv pt-4 textcenter">
+                          <button type="button" class="btn primaryBtn readbtn">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 py-4 py-lg-5">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                  <div class="portfolioImagesection" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./assets/img/portfolio3.png.webp" alt="portfolioImg" class="h-100 w-100 img-fluid object-fit-cover">
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="row">
+                    <div class="portfoliotextsection text-center text-lg-start ps-lg-0 ps-lg-5" data-aos="fade-down" data-aos-duration="1000">
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="date py-3 ps-4">
+                          december 2018
+                        </div>
+                      </div>
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="projectName pb-3">
+                          Pure Bedroom Architecture
+                        </div>
+                      </div>
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="description">
+                          If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                        </div>
+                      </div>
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="buttondiv pt-4 textcenter">
+                          <button type="button" class="btn primaryBtn readbtn">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 py-4 py-lg-5">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                  <div class="portfolioImagesection" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./assets/img/portfolio4.png.webp" alt="portfolioImg" class="h-100 w-100 img-fluid object-fit-cover">
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                  <div class="row">
+                    <div class="portfoliotextsection text-center text-lg-start ps-lg-0 ps-lg-5" data-aos="fade-down" data-aos-duration="1000">
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="date py-3 ps-4">
+                          december 2018
+                        </div>
+                      </div>
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="projectName pb-3">
+                          Pure Bedroom Architecture
+                        </div>
+                      </div>
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="description">
+                          If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                        </div>
+                      </div>
+                      <div class="col-12 col-xxl-10 mx-auto">
+                        <div class="buttondiv pt-4 textcenter">
+                          <button type="button" class="btn primaryBtn readbtn">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- portfolio section Ends -->
+    
+    <!-- projects Section Start -->
+      <div class="container-fluid projectSection py-4 py-md-5 overflow-x-hidden" id="projectSection">
+        <div class="row">
+          <div class="col-12 head text-center pt-3" data-aos="fade-right">
+            OUR WORKS
+          </div>
+          <div class="col-12 subHead text-center pb-3 pb-sm-4 pb-xl-5" data-aos="fade-left">
+            LATEST Designs
+          </div>
+          <div class="col-12 px-0">
+            <div class="swiper projectSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiperMaincard position-relative">
+                    <div class="swiperImg">
+                      <img src="./assets/img/slider02.webp" alt="projectSwiperImg" class="h-100 w-100 img-fluid object-fit-cover">
+                    </div>
+                    <div class="swiperCard text-center position-absolute bottom-0 start-0 end-0 mx-5 mb-5 py-3 px-3">
+                      <div class="text pb-2">
+                        Interiors
+                      </div>
+                      <div class="mainText">
+                        Lower main Office karnataka bharat
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperMaincard position-relative">
+                    <div class="swiperImg">
+                      <img src="./assets/img/slider03.webp" alt="projectSwiperImg" class="h-100 w-100 img-fluid object-fit-cover">
+                    </div>
+                    <div class="swiperCard text-center position-absolute bottom-0 start-0 end-0 mx-5 mb-5 py-3 px-3">
+                      <div class="text pb-2">
+                        Interiors
+                      </div>
+                      <div class="mainText">
+                        Lower main Office karnataka bharat
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperMaincard position-relative">
+                    <div class="swiperImg">
+                      <img src="./assets/img/slider04.webp" alt="projectSwiperImg" class="h-100 w-100 img-fluid object-fit-cover">
+                    </div>
+                    <div class="swiperCard text-center position-absolute bottom-0 start-0 end-0 mx-5 mb-5 py-3 px-3">
+                      <div class="text pb-2">
+                        Interiors
+                      </div>
+                      <div class="mainText">
+                        Lower main Office karnataka bharat
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperMaincard position-relative">
+                    <div class="swiperImg">
+                      <img src="./assets/img/slider05.webp" alt="projectSwiperImg" class="h-100 w-100 img-fluid object-fit-cover">
+                    </div>
+                    <div class="swiperCard text-center position-absolute bottom-0 start-0 end-0 mx-5 mb-5 py-3 px-3">
+                      <div class="text pb-2">
+                        Interiors
+                      </div>
+                      <div class="mainText">
+                        Lower main Office karnataka bharat
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperMaincard position-relative">
+                    <div class="swiperImg">
+                      <img src="./assets/img/slider02.webp" alt="projectSwiperImg" class="h-100 w-100 img-fluid object-fit-cover">
+                    </div>
+                    <div class="swiperCard text-center position-absolute bottom-0 start-0 end-0 mx-5 mb-5 py-3 px-3">
+                      <div class="text pb-2">
+                        Interiors
+                      </div>
+                      <div class="mainText">
+                        Lower main Office karnataka bharat
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperMaincard position-relative">
+                    <div class="swiperImg">
+                      <img src="./assets/img/slider03.webp" alt="projectSwiperImg" class="h-100 w-100 img-fluid object-fit-cover">
+                    </div>
+                    <div class="swiperCard text-center position-absolute bottom-0 start-0 end-0 mx-5 mb-5 py-3 px-3">
+                      <div class="text pb-2">
+                        Interiors
+                      </div>
+                      <div class="mainText">
+                        Lower main Office karnataka bharat
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperMaincard position-relative">
+                    <div class="swiperImg">
+                      <img src="./assets/img/slider04.webp" alt="projectSwiperImg" class="h-100 w-100 img-fluid object-fit-cover">
+                    </div>
+                    <div class="swiperCard text-center position-absolute bottom-0 start-0 end-0 mx-5 mb-5 py-3 px-3">
+                      <div class="text pb-2">
+                        Interiors
+                      </div>
+                      <div class="mainText">
+                        Lower main Office karnataka bharat
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperMaincard position-relative">
+                    <div class="swiperImg">
+                      <img src="./assets/img/slider05.webp" alt="projectSwiperImg" class="h-100 w-100 img-fluid object-fit-cover">
+                    </div>
+                    <div class="swiperCard text-center position-absolute bottom-0 start-0 end-0 mx-5 mb-5 py-3 px-3">
+                      <div class="text pb-2">
+                        Interiors
+                      </div>
+                      <div class="mainText">
+                        Lower main Office karnataka bharat
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperMaincard position-relative">
+                    <div class="swiperImg">
+                      <img src="./assets/img/slider02.webp" alt="projectSwiperImg" class="h-100 w-100 img-fluid object-fit-cover">
+                    </div>
+                    <div class="swiperCard text-center position-absolute bottom-0 start-0 end-0 mx-5 mb-5 py-3 px-3">
+                      <div class="text pb-2">
+                        Interiors
+                      </div>
+                      <div class="mainText">
+                        Lower main Office karnataka bharat
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperMaincard position-relative">
+                    <div class="swiperImg">
+                      <img src="./assets/img/slider03.webp" alt="projectSwiperImg" class="h-100 w-100 img-fluid object-fit-cover">
+                    </div>
+                    <div class="swiperCard text-center position-absolute bottom-0 start-0 end-0 mx-5 mb-5 py-3 px-3">
+                      <div class="text pb-2">
+                        Interiors
+                      </div>
+                      <div class="mainText">
+                        Lower main Office karnataka bharat
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperMaincard position-relative">
+                    <div class="swiperImg">
+                      <img src="./assets/img/slider05.webp" alt="projectSwiperImg" class="h-100 w-100 img-fluid object-fit-cover">
+                    </div>
+                    <div class="swiperCard text-center position-absolute bottom-0 start-0 end-0 mx-5 mb-5 py-3 px-3">
+                      <div class="text pb-2">
+                        Interiors
+                      </div>
+                      <div class="mainText">
+                        Lower main Office karnataka bharat
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperMaincard position-relative">
+                    <div class="swiperImg">
+                      <img src="./assets/img/slider05.webp" alt="projectSwiperImg" class="h-100 w-100 img-fluid object-fit-cover">
+                    </div>
+                    <div class="swiperCard text-center position-absolute bottom-0 start-0 end-0 mx-5 mb-5 py-3 px-3">
+                      <div class="text pb-2">
+                        Interiors
+                      </div>
+                      <div class="mainText">
+                        Lower main Office karnataka bharat
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next swipernext border-0 shadow-none text-secondary-emphasis">
+                <button type="button" class="btn primaryBtn mainbtn aboutbtn fillbtn">
+                  <div class="mainbtnImg">
+                  <img src="./assets/img/nextblack.svg" alt="nextbtn" class="h-100 w-100 img-fluid">
+                  </div>
+                </button>
+              </div>
+              <div class="swiper-button-prev swiperprev border-0 shadow-none text-secondary-emphasis">
+                <button type="button" class="btn primaryBtn mainbtn aboutbtn fillbtn">
+                  <div class="mainbtnImg">
+                    <img src="./assets/img/nextblack.svg" alt="nextbtn" class="h-100 w-100 img-fluid">
+                    </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- projects Section Ends -->
+
+    <!-- looking Section Start -->
+      <div class="container-fluid lookinSection">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-10 col-lg-8">
+              <div class="lookingtext text-center">
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <div class="head">
+                      LOOKING FOR A QUALITY AND AFFORDABLE Interior Designer?
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-10">
+                    <div class="subHead pt-4">
+                      Inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace.
+                    </div>
+                  </div>
+                  <div class="col-12 mt-5">
+                    <button type="button" class="btn primaryBtn aboutbtn readbtn">Learn More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- looking Section Ends -->
+
+    <!-- unique Section Start -->
+      <div class="container-fluid uniqueSection bg-black py-4 py-md-5 overflow-x-hidden" id="uniqueSection">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="head text-center" data-aos="fade-right">
+                SOME FEATURES THAT MADE US UNIQUE
+              </div>
+              <div class="subHead text-center py-3" data-aos="fade-left">
+                Who are in extremely love with eco friendly system.
+              </div>
+            </div>
+            <div class="col-12 px-md-5 pt-3 pt-sm-4 pt-lg-5">
+              <div class="row gy-3 gy-md-4 flex-nowrap flex-sm-wrap overflow-x-auto">
+                <div class="col-10 ps-0 ps-sm-2 col-sm-6 col-lg-4">
+                  <div class="uniqueCard bg-white rounded-3" >
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <div class="icon">
+                          <img src="./assets/img/user.svg" alt="cardIcon" class="h-100 w-100 img-fluid">
+                        </div>
+                      </div>
+                      <div class="col px-0 cardHeading">
+                        EXPERT TECHNICIANS
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 cardSubHEading pt-2">
+                        Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-10 ps-0 ps-sm-2 col-sm-6 col-lg-4">
+                  <div class="uniqueCard bg-white rounded-3" >
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <div class="icon">
+                          <img src="./assets/img/news.svg" alt="cardIcon" class="h-100 w-100 img-fluid">
+                        </div>
+                      </div>
+                      <div class="col px-0 cardHeading">
+                        PROFESSIONAL SERVICE
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 cardSubHEading pt-2">
+                      Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-10 ps-0 ps-sm-2 col-sm-6 col-lg-4">
+                  <div class="uniqueCard bg-white rounded-3" >
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <div class="icon">
+                          <img src="./assets/img/Telephone.svg" alt="cardIcon" class="h-100 w-100 img-fluid">
+                        </div>
+                      </div>
+                      <div class="col px-0 cardHeading">
+                        GREAT SUPPORT
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 cardSubHEading pt-2">
+                        Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-10 ps-0 ps-sm-2 col-sm-6 col-lg-4">
+                  <div class="uniqueCard bg-white rounded-3">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <div class="icon">
+                          <img src="./assets/img/Rocket.svg" alt="cardIcon" class="h-100 w-100 img-fluid">
+                        </div>
+                      </div>
+                      <div class="col px-0 cardHeading">
+                        TECHNICAL SKILLS
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 cardSubHEading pt-2">
+                        Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-10 ps-0 ps-sm-2 col-sm-6 col-lg-4">
+                  <div class="uniqueCard bg-white rounded-3">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <div class="icon">
+                          <img src="./assets/img/diamond.svg" alt="cardIcon" class="h-100 w-100 img-fluid">
+                        </div>
+                      </div>
+                      <div class="col px-0 cardHeading">
+                        HIGHLY RECOMENDED
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 cardSubHEading pt-2">
+                      Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-10 ps-0 ps-sm-2 col-sm-6 col-lg-4">
+                  <div class="uniqueCard bg-white rounded-3">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <div class="icon">
+                          <img src="./assets/img/Message.svg" alt="cardIcon" class="h-100 w-100 img-fluid">
+                        </div>
+                      </div>
+                      <div class="col px-0 cardHeading">
+                        POSITIVE REVIEWS
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 cardSubHEading pt-2">
+                        Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- unique Section Ends -->
+
+    <!-- choose Section Start -->
+      <div class="container-fluid chooseSection py-3 py-sm-4 py-md-5 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="imgSection">
+                <div class="row gap-0 gap-xl-1">
+                  <div class="col-6 col-xl-5">
+                    <div class="chooseimgone">
+                    </div>
+                  </div>
+                  <div class="col-6 col-xl-5">
+                    <div class="chooseimgtWO">
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-11">
+                    <div class="placeholderdiv bg-black py-5 px-5 ms-4">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="row justify-content-between py-2">
+                            <div class="col-10">
+                              <div class="labeltxt">
+                                Idea & Concept
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="labelNumber">
+                                90%
+                              </div>
+                            </div>
+                          </div>
+                          <div class="progress progressLine  rounded-0" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+                            <div class="progress-bar progressbar" style="width: 100%"></div>
+                          </div>
+                        </div>
+                        <div class="col-11 py-2">
+                          <div class="row justify-content-between py-2">
+                            <div class="col-5">
+                              <div class="labeltxt">
+                                Architecture
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="labelNumber">
+                                80%
+                              </div>
+                            </div>
+                          </div>
+                          <div class="progress progressLine  rounded-0" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+                            <div class="progress-bar progressbar" style="width: 100%"></div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row justify-content-between py-2">
+                            <div class="col-10">
+                              <div class="labeltxt">
+                                Accuracy & Execution
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="labelNumber">
+                                90%
+                              </div>
+                            </div>
+                          </div>
+                          <div class="progress progressLine  rounded-0" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+                            <div class="progress-bar progressbar" style="width: 100%"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 pt-3 pt-lg-0">
+              <div class="txtSection">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="head pt-0 pt-xl-4 text-center text-lg-start">
+                      Why Choose Us
+                    </div>
+                  </div>
+                  <div class="col-11">
+                    <div class="mainHead text-center text-lg-start">
+                      A Behind-The-Scenes Look At Our Agency
+                    </div>
+                  </div>
+                  <div class="col-11">
+                    <div class="description py-2 py-xl-3 text-center text-lg-start">
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
+                    </div>
+                  </div>
+                  <div class="col-12 pt-4">
+                    <div class="row gy-4">
+                      <div class="col-6">
+                        <div class="mainCard">
+                          <div class="row align-items-center">
+                            <div class="col-auto">
+                              <div class="CardImg">
+                                <img src="./assets/img/flats.svg" alt="CardImg" class="h-100 w-100 img-fluid">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="name">
+                                Fast building
+                              </div>
+                              <div class="work py-2">
+                                Lorem ipsum dolorsit amet consectetur
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="mainCard">
+                          <div class="row align-items-center">
+                            <div class="col-auto">
+                              <div class="CardImg">
+                                <img src="./assets/img/home.svg" alt="CardImg" class="h-100 w-100 img-fluid">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="name">
+                                Residental
+                              </div>
+                              <div class="work py-2">
+                                Lorem ipsum dolorsit amet consectetur
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="mainCard">
+                          <div class="row align-items-center">
+                            <div class="col-auto">
+                              <div class="CardImg">
+                                <img src="./assets/img/flats.svg" alt="CardImg" class="h-100 w-100 img-fluid">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="name">
+                                Interior
+                              </div>
+                              <div class="work py-2">
+                                Lorem ipsum dolorsit amet consectetur
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="mainCard">
+                          <div class="row align-items-center">
+                            <div class="col-auto">
+                              <div class="CardImg">
+                                <img src="./assets/img/home.svg" alt="CardImg" class="h-100 w-100 img-fluid">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="name">
+                                Construction
+                              </div>
+                              <div class="work py-2">
+                                Lorem ipsum dolorsit amet consectetur
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- choose Section Ends -->
+
+    <!-- team Section Start -->
+      <div class="container-fluid teamSection pt-5 overflow-x-hidden" id="teamSection">
+        <div class="row">
+          <div class="col-12">
+            <div class="subHead text-center" data-aos="fade-right">
+              ARCHITECT
+            </div>
+            <div class="head text-center pt-3 pb-3 pb-md-5" data-aos="fade-left">
+              Behind those Beautiful Works
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6 col-sm-3 px-0">
+                <div class="teamtextImg position-relative">
+                  <div class="teamImage">
+                    <img src="./assets/img/team-1.jpg.webp" alt="teamSectionImg" class="object-fit-cover h-100 w-100 img-fluid">
+                  </div>
+                  <div class="hidden text-center position-absolute top-0 start-0 end-0  h-100 bg-white px-3">
+                    <div class="position pt-2 pt-lg-5">
+                      ARCHITECT
+                    </div>
+                    <div class="name pt-2 pt-xl-5">
+                      Lloyd Wilson
+                    </div>
+                    <div class="description py-2 py-lg-4">
+                      I am an ambitious workaholic, but apart from that, pretty simple person.
+                    </div>
+                    <div class="socialLinks">
+                      <ul class="list-unstyled d-flex justify-content-center gap-3 align-items-center">
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/instagramyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/linkedinyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/twitteryellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3 px-0">
+                <div class="teamtextImg position-relative">
+                  <div class="teamImage">
+                    <img src="./assets/img/team-2.jpg.webp" alt="teamSectionImg" class="object-fit-cover h-100 w-100 img-fluid">
+                  </div>
+                  <div class="hidden text-center position-absolute top-0 start-0 end-0  h-100 bg-white px-3">
+                    <div class="position pt-2 pt-lg-5">
+                      ARCHITECT
+                    </div>
+                    <div class="name pt-2 pt-xl-5">
+                      Rachel Parker
+                    </div>
+                    <div class="description py-2 py-lg-4">
+                      I am an ambitious workaholic, but apart from that, pretty simple person.
+                    </div>
+                    <div class="socialLinks">
+                      <ul class="list-unstyled d-flex justify-content-center gap-3 align-items-center">
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/instagramyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/linkedinyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/twitteryellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3 px-0">
+                <div class="teamtextImg position-relative">
+                  <div class="teamImage">
+                    <img src="./assets/img/team-3.jpg.webp" alt="teamSectionImg" class="object-fit-cover h-100 w-100 img-fluid">
+                  </div>
+                  <div class="hidden text-center position-absolute top-0 start-0 end-0  h-100 bg-white px-3">
+                    <div class="position pt-2 pt-lg-5">
+                      ARCHITECT
+                    </div>
+                    <div class="name pt-2 pt-xl-5">
+                      Ian Smith
+                    </div>
+                    <div class="description py-2 py-lg-4">
+                      I am an ambitious workaholic, but apart from that, pretty simple person.
+                    </div>
+                    <div class="socialLinks">
+                      <ul class="list-unstyled d-flex justify-content-center gap-3 align-items-center">
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/instagramyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/linkedinyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/twitteryellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3 px-0">
+                <div class="teamtextImg position-relative">
+                  <div class="teamImage">
+                    <img src="./assets/img/team-4.jpg.webp" alt="teamSectionImg" class="object-fit-cover h-100 w-100 img-fluid">
+                  </div>
+                  <div class="hidden text-center position-absolute top-0 start-0 end-0  h-100 bg-white px-3">
+                    <div class="position pt-2 pt-lg-5">
+                      ARCHITECT
+                    </div>
+                    <div class="name pt-2 pt-xl-5">
+                      Alicia Henderson
+                    </div>
+                    <div class="description py-2 py-lg-4">
+                      I am an ambitious workaholic, but apart from that, pretty simple person.
+                    </div>
+                    <div class="socialLinks">
+                      <ul class="list-unstyled d-flex justify-content-center gap-3 align-items-center">
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/instagramyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/linkedinyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/twitteryellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3 px-0">
+                <div class="teamtextImg position-relative">
+                  <div class="teamImage">
+                    <img src="./assets/img/staff-1.jpg.webp" alt="teamSectionImg" class="object-fit-cover h-100 w-100 img-fluid">
+                  </div>
+                  <div class="hidden text-center position-absolute top-0 start-0 end-0  h-100 bg-white px-3">
+                    <div class="position pt-2 pt-lg-5">
+                      ARCHITECT
+                    </div>
+                    <div class="name pt-2 pt-xl-5">
+                      Alicia Henderson
+                    </div>
+                    <div class="description py-2 py-lg-4">
+                      I am an ambitious workaholic, but apart from that, pretty simple person.
+                    </div>
+                    <div class="socialLinks">
+                      <ul class="list-unstyled d-flex justify-content-center gap-3 align-items-center">
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/instagramyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/linkedinyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/twitteryellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3 px-0">
+                <div class="teamtextImg position-relative">
+                  <div class="teamImage">
+                    <img src="./assets/img/staff-2.jpg.webp" alt="teamSectionImg" class="object-fit-cover h-100 w-100 img-fluid">
+                  </div>
+                  <div class="hidden text-center position-absolute top-0 start-0 end-0  h-100 bg-white px-3">
+                    <div class="position pt-2 pt-lg-5">
+                      ARCHITECT
+                    </div>
+                    <div class="name pt-2 pt-xl-5">
+                      Alicia Henderson
+                    </div>
+                    <div class="description py-2 py-lg-4">
+                      I am an ambitious workaholic, but apart from that, pretty simple person.
+                    </div>
+                    <div class="socialLinks">
+                      <ul class="list-unstyled d-flex justify-content-center gap-3 align-items-center">
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/instagramyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/linkedinyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/twitteryellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3 px-0">
+                <div class="teamtextImg position-relative">
+                  <div class="teamImage">
+                    <img src="./assets/img/staff-3.jpg.webp" alt="teamSectionImg" class="object-fit-cover h-100 w-100 img-fluid">
+                  </div>
+                  <div class="hidden text-center position-absolute top-0 start-0 end-0  h-100 bg-white px-3">
+                    <div class="position pt-2 pt-lg-5">
+                      ARCHITECT
+                    </div>
+                    <div class="name pt-2 pt-xl-5">
+                      Alicia Henderson
+                    </div>
+                    <div class="description py-2 py-lg-4">
+                      I am an ambitious workaholic, but apart from that, pretty simple person.
+                    </div>
+                    <div class="socialLinks">
+                      <ul class="list-unstyled d-flex justify-content-center gap-3 align-items-center">
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/instagramyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/linkedinyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/twitteryellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3 px-0">
+                <div class="teamtextImg position-relative">
+                  <div class="teamImage">
+                    <img src="./assets/img/staff-4.jpg.webp" alt="teamSectionImg" class="object-fit-cover h-100 w-100 img-fluid">
+                  </div>
+                  <div class="hidden text-center position-absolute top-0 start-0 end-0  h-100 bg-white px-3">
+                    <div class="position pt-2 pt-lg-5">
+                      ARCHITECT
+                    </div>
+                    <div class="name pt-2 pt-xl-5">
+                      Alicia Henderson
+                    </div>
+                    <div class="description py-2 py-lg-4">
+                      I am an ambitious workaholic, but apart from that, pretty simple person.
+                    </div>
+                    <div class="socialLinks">
+                      <ul class="list-unstyled d-flex justify-content-center gap-3 align-items-center">
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/instagramyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/linkedinyellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                        <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/twitteryellow.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- team Section Ends -->
+
+    <!-- Footer Start -->
+      <div class="container-fluid footerSection bg-black py-5">
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-12 col-sm-6 col-md-5 col-xl-3">
+              <div class="head">
+                Belara
+              </div>
+              <div class="subHead py-4 py-md-5">
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+              </div>
+              <div class="socialLinks">
+                <ul class="list-unstyled d-flex gap-3 align-items-center">
+                  <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/instagramwhite.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                  <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/linkedinwhite.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                  <li class="socialLinksLi"><a href="javascript:;" class="socialLinksanc text-decoration-none"><img src="./assets/img/twitterwhite.svg" alt="socialImg" class="h-100 w-100 img-fluid"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 col-xl-2">
+              <div class="head">
+                Links
+              </div>
+              <ul class="list-unstyled socialList py-4 py-md-5 d-flex flex-column gap-2">
+                <li class="socialListli">
+                  <a href="javascript:;" class="socialListanc text-decoration-none d-flex align-items-center gap-3">
+                    <div class="text">
+                      Home
+                    </div>
+                  </a>
+                </li>
+                <li class="socialListli">
+                  <a href="javascript:;" class="socialListanc text-decoration-none d-flex align-items-center gap-3">
+                    <div class="text">
+                      About
+                    </div>
+                  </a>
+                </li>
+                <li class="socialListli">
+                  <a href="javascript:;" class="socialListanc text-decoration-none d-flex align-items-center gap-3">
+                    <div class="text">
+                      Services
+                    </div>
+                  </a>
+                </li>
+                <li class="socialListli">
+                  <a href="javascript:;" class="socialListanc text-decoration-none d-flex align-items-center gap-3">
+                    <div class="text">
+                      Projects
+                    </div>
+                  </a>
+                </li>
+                <li class="socialListli">
+                  <a href="javascript:;" class="socialListanc text-decoration-none d-flex align-items-center gap-3">
+                    <div class="text">
+                      Contacts
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 col-xl-3">
+              <div class="head">
+                Services
+              </div>
+              <ul class="list-unstyled socialList py-4 py-md-5 d-flex flex-column gap-2">
+                <li class="socialListli">
+                  <a href="javascript:;" class="socialListanc text-decoration-none d-flex align-items-center gap-3">
+                    <div class="text">
+                      Architectural Design
+                    </div>
+                  </a>
+                </li>
+                <li class="socialListli">
+                  <a href="javascript:;" class="socialListanc text-decoration-none d-flex align-items-center gap-3">
+                    <div class="text">
+                      Interior Design
+                    </div>
+                  </a>
+                </li>
+                <li class="socialListli">
+                  <a href="javascript:;" class="socialListanc text-decoration-none d-flex align-items-center gap-3">
+                    <div class="text">
+                      Exterior Design
+                    </div>
+                  </a>
+                </li>
+                <li class="socialListli">
+                  <a href="javascript:;" class="socialListanc text-decoration-none d-flex align-items-center gap-3">
+                    <div class="text">
+                      Lighting Design
+                    </div>
+                  </a>
+                </li>
+                <li class="socialListli">
+                  <a href="javascript:;" class="socialListanc text-decoration-none d-flex align-items-center gap-3">
+                    <div class="text">
+                      AutoCAD Service
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 col-xl-3">
+              <div class="head">
+                Have a Questions?
+              </div>
+              <ul class="list-unstyled socialList py-4 py-md-5 d-flex flex-column gap-4">
+                <li class="socialListli">
+                  <a class="socialListanc text-decoration-none d-flex align-items-center gap-3">
+                    <div class="iconImg">
+                    <img src="./assets/img/mapwhite.svg" alt="arrowRight" class="h-100 w-100 img-fluid"> 
+                    </div>
+                    <div class="text">
+                      C-262 Sector-9 Chitrakoot Vaishali Nagar, Jaipur, Rajastan 
+                    </div>
+                  </a>
+                </li>
+                <li class="socialListli">
+                  <a class="socialListanc text-decoration-none d-flex align-items-center gap-3">
+                    <div class="iconImg">
+                    <img src="./assets/img/phonewhite.svg" alt="arrowRight" class="h-100 w-100 img-fluid"> 
+                    </div>
+                    <div class="text">
+                      +91 8864856668
+                    </div>
+                  </a>
+                </li>
+                <li class="socialListli">
+                  <a class="socialListanc text-decoration-none d-flex align-items-center gap-3">
+                    <div class="iconImg">
+                    <img src="./assets/img/mailwhite.svg" alt="arrowRight" class="h-100 w-100 img-fluid"> 
+                    </div>
+                    <div class="text">
+                      shubham.aren@gmail.com
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Footer Ends -->
+
+    <!-- Sidebutton start -->
+      <div class="container-fluid sideButtonSection">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="icon">
+                <a href="#" class="text-decoration-none"> 
+                  <img src="./assets/img/ArrowRight.svg" alt="" class="h-100 w-100 img-fluid">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Sidebutton Ends -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/swiper/js/swiper-bundle.min.js"></script>
+    <script src="./assets/libs/light/lightgallery.min.js"></script>
+    <script src="./assets/libs/aos-master/aos.js"></script>
+    <script>
+      var swiper = new Swiper(".heroSwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      });
+    </script>
+    <script>
+            window.onscroll = function () {
+          scrollFunction();
+      };
+      var first = true;
+      function scrollFunction() {
+          if (document.body.scrollTop > 140 || document.documentElement.scrollTop > 140) {
+              document.getElementById("myMainNav").classList.add('fixedNavbar');
+          }
+          else {
+              document.getElementById("myMainNav").classList.remove('fixedNavbar');
+          }
+      }
+    </script>
+    <script>
+      var swiper = new Swiper(".projectSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        breakpoints: {
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1400: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

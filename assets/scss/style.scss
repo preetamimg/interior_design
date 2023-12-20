@@ -1,0 +1,1302 @@
+@import "./variables";
+@import "./fonts.scss";
+@import "./mixins";
+@import "./button";
+@import "./typography";
+
+
+body{
+    overflow-x: hidden;
+}
+
+// nav bar start
+    .myNavBar{
+        &.fixedNavbar {
+            background-color: black !important;
+        }
+        & .navbarBrand{
+            & .logoImg{
+                    width: 100px;
+                    height: 34px;
+                @include sm{
+                    width: 120px;
+                    height: 34px;
+                }
+                @include md{
+                    width: 133px;
+                    height: 40px;
+                }
+                @include lg{
+                    width: 172px;
+                    height: 50px;
+                }
+                @include xl{}
+                @include xxl{}
+            }
+        }
+        & .myNavBarOffcanvas{
+            & .offcanvasBody{
+                & .navbarNav{
+                    & .navItem{
+                        & .hidden{
+                            opacity: 0;
+                            visibility: hidden;
+                            position: absolute;
+                            background-color: $black;
+                            transition: all .3s ease-in-out;
+                            & .hiddenul{
+                                & .hiddenli{
+                                    padding: 10px 30px ;
+                                    & .hiddenanc{
+                                        color: $white;
+                                        font-weight: 600;
+                                    }
+                                    &:hover{
+                                        background-color: $theme1;
+                                        & .hiddenanc{
+                                            color: $black;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .navLink{
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: $white !important;
+                            position: relative;
+                            @include sm{}
+                            @include md{
+                            font-size: 15px;
+                            }
+                            @include lg{
+                            font-size: 16px;
+                            }
+                            @include xl{
+                            font-size: 17px;
+                            }
+                            @include xxl{
+                            font-size: 18px;
+                            }
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                height: 2px;
+                                width: 0%;
+                                background-color: goldenrod;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                transition: all 0.3s ease-in-out;
+                            }
+                            &.active{
+                                &::after{
+                                    width: 100%;
+                                    }
+                                }
+                            &:hover{
+                                &::after{
+                                    width: 100%;
+                                }
+                                
+                            }
+                            
+                        }
+                        &:hover{
+                            & .hidden{
+                                opacity: 1;
+                                visibility: visible;
+                                
+                            }
+                        }
+                    }
+                }
+                & .address{
+                    & .addOne{
+                        color: grey;
+                        font-size: 16px;
+                    }
+                    & .addTwo{
+                        color: $theme1;
+                        font-size: 20px;
+                        font-weight: 600;
+                        @include sm{}
+                        @include md{
+                        font-size: 20px;
+                        }
+                        @include lg{
+                        font-size: 20px;
+                        }
+                        @include xl{
+                        font-size: 23px;
+                        }
+                        @include xxl{
+                        font-size: 25px;
+                        }
+                    }
+
+                }
+            }
+            
+        }
+        &.nav-active {
+            background-color:black !important;
+            z-index: 111;
+        }
+    }
+// nav bar Ends
+
+// Hero Section Start
+    .heroSection{
+        .swiper {
+            width: 100%;
+            height: 50vh;
+            @include sm{
+                height: 60vh;
+            }
+            @include md{
+                height: 70vh;
+            }
+            @include lg{
+                height: 100%;
+            }
+            @include xl{
+                height: 100%;
+            }
+            @include xxl{
+                height: 100%;
+            }
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        & .text{
+            font-size: 16px;
+            line-height: 27px;
+            font-weight: 600;
+          
+            @include sm{
+            font-size: 28px;
+            line-height: 38px;
+            }
+            @include md{
+            font-size: 37px;
+            line-height: 47px;
+            }
+            @include lg{
+            font-size: 48px;
+            line-height: 58px;
+            }
+            @include xl{
+            font-size: 58px;
+            line-height: 68px;
+            }
+            @include xxl{
+            font-size: 65px;
+            line-height: 75px;
+            }
+        }
+        & .swipernext{
+            &::after{
+                content: '';
+            }
+            right: 20px;
+            @include sm{
+            right: 40px;
+            }
+            @include md{
+            right: 60px;
+            }
+            @include lg{
+            right: 80px;
+            }
+            @include xl{
+            right: 100px;
+            }
+            @include xxl{
+            right: 100px;
+            }
+            & .mainbtnImg{
+                height: 13px;
+                width: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include sm{
+                    height: 14px;
+                    width: 6px;
+                }
+                @include md{
+                    height: 18px;
+                    width: 8px;
+                }
+                @include lg{
+                    height: 24px;
+                    width: 24px;
+                }
+                @include xl{
+                    height: 27px;
+                    width: 27px;
+                }
+                @include xxl{
+                    height: 27px;
+                    width: 27px;
+                }
+            }
+        }
+        & .swiperprev{
+            transform: rotate(180deg);
+            &::after{
+                content: '';
+            }
+            left: 20px;
+            @include sm{
+            left: 40px;
+            }
+            @include md{
+            left: 60px;
+            }
+            @include lg{
+            left: 80px;
+            }
+            @include xl{
+            left: 100px;
+            }
+            @include xxl{
+            left: 100px;
+            }
+            & .mainbtnImg{
+                height: 13px;
+                width: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include sm{
+                    height: 14px;
+                    width: 6px;
+                }
+                @include md{
+                    height: 18px;
+                    width: 8px;
+                }
+                @include lg{
+                    height: 24px;
+                    width: 24px;
+                }
+                @include xl{
+                    height: 27px;
+                    width: 27px;
+                }
+                @include xxl{
+                    height: 27px;
+                    width: 27px;
+                }
+            }
+        }
+        & .swiper-slide-active {
+            & .text {
+                animation-name: fade-in;
+                animation-duration: 3s;
+                animation-delay: 0s;
+                animation-fill-mode: both;
+            }
+        }
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+// Hero Section Ends
+
+// about Section Start
+    .aboutection{
+        & .abouttxt{
+            & .head{
+                font-size: 16px;
+                color: $theme1;
+                font-weight: 600;
+                @include sm{
+                    font-size: 17px;
+                }
+                @include md{
+                    font-size: 18px;
+                }
+                @include lg{}
+                @include xl{}
+                @include xxl{}
+            }
+            & .subHead{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 120%;
+                @include sm{
+                    font-size: 26px;
+                }
+                @include md{
+                font-size: 35px;
+                }
+                @include lg{
+                font-size: 40px;
+                }
+                @include xl{
+                font-size: 40px;
+                }
+                @include xxl{
+                font-size: 40px;
+                }
+            }
+            & .description{
+                font-size: 15px;
+                opacity: 0.8;
+                @include sm{
+                    font-size: 16px;
+                }
+                @include md{
+                    font-size: 17px;
+                }
+                @include lg{
+                    font-size: 18px;
+                }
+                @include xl{}
+                @include xxl{}
+            }
+        }
+        & .aboutImg{
+            aspect-ratio: 1/1;
+            position: relative;
+            &::after{
+                position: absolute;
+                left: 44px;
+                top: 34px;
+                height: 326px;
+                width: 281px;
+                border: 15px solid rgba(185, 175, 134, 0.2);
+                content: "";
+                z-index: -1;
+                @include sm{
+                    left: 86px;
+                    top: 34px;
+                    height: 440px;
+                    width: 370px;
+                }
+                @include md{
+                    left: 100px;
+                    top: 50px;
+                    height: 600px;
+                    width: 500px;
+                }
+                @include lg{
+                    left: 65px;
+                    top: 50px;
+                    height: 466px;
+                    width: 397px;
+                }
+                @include xl{
+                    left: 89px;
+                    top: 50px;
+                    height: 540px;
+                    width: 470px;
+                }
+                @include xxl{
+                    left: 89px;
+                    top: 50px;
+                    height: 540px;
+                    width: 470px;
+                }
+            }
+        }
+    }
+// about Section Ends
+
+// portfolio Section start
+    .portfolioSection{
+        & .head{
+            font-size: 16px;
+            font-weight: 600;
+            color: $theme1;
+            @include sm{
+                font-size: 16px;
+                }
+                @include md{
+                font-size: 16px;
+                }
+                @include lg{
+                font-size: 18px;
+                }
+                @include xl{
+                font-size: 18px;
+                }
+                @include xxl{
+                font-size: 18px;
+                }
+        }
+        & .subHead{
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            @include sm{
+            font-size: 26px;
+            }
+            @include md{
+            font-size: 30px;
+            }
+            @include lg{
+            font-size: 35px;
+            }
+            @include xl{
+            font-size: 40px;
+            }
+            @include xxl{
+            font-size: 40px;
+            }
+        }
+        & .portfolioImagesection{
+            transition: all .3s ease-in-out;
+            overflow: hidden;
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
+        & .portfoliotextsection{
+            & .projectName{
+                font-size: 20px;
+                font-weight: 500;
+                color: $white;
+                @include sm{
+                    font-size: 20px;
+                    }
+                    @include md{
+                    font-size: 24px;
+                    }
+                    @include lg{
+                    font-size: 24px;
+                    }
+                    @include xl{
+                    font-size: 26px;
+                    }
+                    @include xxl{
+                    font-size: 30px;
+                    }
+            }
+            & .date{
+                font-size: 14px;
+                font-weight: 500;
+                color: $theme1;
+                text-transform: uppercase;
+                position: relative;
+                    @include sm{
+                        font-size: 15px;
+                        }
+                        @include md{
+                        font-size: 16px;
+                        }
+                        @include lg{
+                        font-size: 16px;
+                        }
+                        @include xl{
+                        font-size: 18px;
+                        }
+                        @include xxl{
+                        font-size: 18px;
+                    }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    height: 2px;
+                    width: 24px;
+                    background-color: $theme1;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 37%;
+                    display: none;
+                    @include sm{
+                        display: none;
+                    }
+                    @include md{
+                        display: none;
+                    }
+                    @include lg{
+                        left: 0;
+                        width: 20px;
+                        display: block;
+                    }
+                    @include xl{
+                        left: 0;
+                    }
+                    @include xxl{
+                        left: 0;
+                    }
+                }
+            }
+            & .description{
+                font-size: 14px;
+                opacity: 0.6;
+                line-height: 120%;
+                color: $white;
+                @include sm{
+                    font-size: 15px;
+                    }
+                    @include md{
+                    font-size: 16px;
+                    }
+                    @include lg{
+                    font-size: 16px;
+                    }
+                    @include xl{
+                    font-size: 17px;
+                    }
+                    @include xxl{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+// portfolio Section ends
+
+// project Section start
+    .projectSection{
+        & .head{
+            font-size: 16px;
+            font-weight: 600;
+            color: $theme1;
+            @include sm{
+                font-size: 16px;
+                }
+                @include md{
+                font-size: 16px;
+                }
+                @include lg{
+                font-size: 18px;
+                }
+                @include xl{
+                font-size: 18px;
+                }
+                @include xxl{
+                font-size: 18px;
+                }
+        }
+        & .subHead{
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+            @include sm{
+            font-size: 26px;
+            }
+            @include md{
+            font-size: 30px;
+            }
+            @include lg{
+            font-size: 35px;
+            }
+            @include xl{
+            font-size: 40px;
+            }
+            @include xxl{
+            font-size: 40px;
+            }
+        }
+        & .swiperMaincard{
+        & .swiperImg{
+            height: 400px;
+            @include sm{
+            height: 400px;
+            }
+            @include md{
+            height: 400px;
+            }
+            @include lg{
+            height: 500px;
+            }
+            @include xl{
+            height: 550px;
+            }
+            @include xxl{
+            height: 600px;
+            }
+        }
+        & .swiperCard{
+            background-color: $white;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .5s ease-in-out;
+            & .text{
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $theme1;
+            }
+            & .mainText{
+                font-size: 14px;
+                line-height: 130%;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+        &:hover{
+            & .swiperCard{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+        & .swipernext{
+            &::after{
+                content: '';
+            }
+            right: 20px;
+            @include sm{
+            right: 40px;
+            }
+            @include md{
+            right: 60px;
+            }
+            @include lg{
+            right: 80px;
+            }
+            @include xl{
+            right: 100px;
+            }
+            @include xxl{
+            right: 100px;
+            }
+            & .mainbtnImg{
+                height: 13px;
+                width: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include sm{
+                    height: 14px;
+                    width: 6px;
+                }
+                @include md{
+                    height: 18px;
+                    width: 8px;
+                }
+                @include lg{
+                    height: 24px;
+                    width: 24px;
+                }
+                @include xl{
+                    height: 27px;
+                    width: 27px;
+                }
+                @include xxl{
+                    height: 27px;
+                    width: 27px;
+                }
+            }
+        }
+        & .swiperprev{
+            transform: rotate(180deg);
+            &::after{
+                content: '';
+            }
+            left: 20px;
+            @include sm{
+            left: 40px;
+            }
+            @include md{
+            left: 60px;
+            }
+            @include lg{
+            left: 80px;
+            }
+            @include xl{
+            left: 100px;
+            }
+            @include xxl{
+            left: 100px;
+            }
+            & .mainbtnImg{
+                height: 13px;
+                width: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include sm{
+                    height: 14px;
+                    width: 6px;
+                }
+                @include md{
+                    height: 18px;
+                    width: 8px;
+                }
+                @include lg{
+                    height: 24px;
+                    width: 24px;
+                }
+                @include xl{
+                    height: 27px;
+                    width: 27px;
+                }
+                @include xxl{
+                    height: 27px;
+                    width: 27px;
+                }
+            }
+        }
+    }
+// project Section Ends
+
+// lookin Section start
+    .lookinSection{
+        background: url(../img/demadSection.webp) no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        & .lookingtext{
+            padding-block: 70px;
+            @include sm{
+                padding-block: 70px;
+            }
+            @include md{
+                padding-block: 70px;
+            }
+            @include lg{
+                padding-block: 80px;
+            }
+            @include xl{
+                padding-block: 100px;
+            }
+            @include xxl{
+            padding-block: 100px;
+            }
+            & .head{
+                font-size: 17px;
+                color: $theme1;
+                line-height: 120%;
+                font-weight: 600;
+                text-transform: uppercase;
+                @include sm{
+                    font-size: 26px;
+                    }
+                    @include md{
+                    font-size: 30px;
+                    }
+                    @include lg{
+                    font-size: 35px;
+                    }
+                    @include xl{
+                    font-size: 40px;
+                    }
+                    @include xxl{
+                    font-size: 40px;
+                    }
+            }
+            & .subHead{
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 120%;
+                color: $white;
+                @include sm{
+                    font-size: 15px;
+                    }
+                    @include md{
+                    font-size: 16px;
+                    }
+                    @include lg{
+                    font-size: 16px;
+                    }
+                    @include xl{
+                    font-size: 18px;
+                    }
+                    @include xxl{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+// lookin Section Ends
+
+// unique Section Start
+    .uniqueSection{
+    
+    & .head{
+        font-size: 17px;
+        color: $theme1;
+        line-height: 120%;
+        font-weight: 600;
+        text-transform: uppercase;
+        @include sm{
+            font-size: 26px;
+            }
+            @include md{
+            font-size: 30px;
+            }
+            @include lg{
+            font-size: 35px;
+            }
+            @include xl{
+            font-size: 40px;
+            }
+            @include xxl{
+            font-size: 40px;
+            }
+    }
+    & .subHead{
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 120%;
+        color: $white;
+        @include sm{
+            font-size: 15px;
+            }
+            @include md{
+            font-size: 16px;
+            }
+            @include lg{
+            font-size: 16px;
+            }
+            @include xl{
+            font-size: 18px;
+            }
+            @include xxl{
+            font-size: 18px;
+        }
+    }
+    & .uniqueCard{
+        padding: 30px 20px;
+        transition: all .3s ease-in-out;
+        @include sm{}
+        @include md{}
+        @include lg{
+        padding: 30px 20px;
+        }
+        @include xl{
+        padding: 40px 30px;
+        }
+        @include xxl{}
+        & .icon{
+            height: 21px;
+            width: 17px;
+            transition: all .3s ease-in-out;
+            display: flex;
+            @include sm{
+                height: 21px;
+                height: 17px;
+            }
+            @include md{
+                height: 24px;
+                width: 20px;
+            }
+        }
+        & .cardHeading{
+            font-size: 14px;
+            font-weight: 600;
+            color: $black;
+            transition: all .3s ease-in-out;
+            @include sm{}
+            @include md{
+                font-size: 16px;
+            }
+            @include lg{
+            font-size: 16px;
+            }
+            @include xl{
+            font-size: 18px;
+            }
+            @include xxl{}
+        }
+        & .cardSubHEading{
+            font-size: 12px;
+            line-height: 120%;
+            @include ellipsis(3);
+            @include sm{
+                font-size: 14px;
+            }
+            @include md{
+                font-size: 14px;
+            }
+            @include lg{
+            font-size: 14px;
+            }
+            @include xl{
+            font-size: 16px;
+            }
+            @include xxl{}
+        }
+        &:hover{
+            background-color: $theme1 !important;
+            transform: translateY(-10px);
+            & .icon{
+                filter: invert(1);
+            }
+            & .cardHeading{
+                color: $white;
+            }
+        }
+    }
+    }
+// unique Section Ends
+
+// choose Section start
+    .chooseSection{
+        & .imgSection{
+
+            & .chooseimgone{
+                background-image: url(../img/choose01.jpg);
+                background-repeat: no-repeat;
+                background-position: center left;
+                background-size: cover;
+                height: 60vh;
+                margin-top: -40px;
+                
+            }
+            & .chooseimgtWO{
+                background-image: url(../img/choose02.jpg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                height: 60vh;
+                
+            }
+            & .placeholderdiv{
+                margin-top: -180px;
+                & .labeltxt{
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 600;
+                    @include sm{
+                        font-size: 16px;
+                    }
+                    @include md{}
+                    @include lg{
+                        font-size: 17px;
+                    }
+                    @include xl{
+                        font-size: 20px;
+                    }
+                }
+                & .labelNumber{
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 500;
+                    @include sm{
+                        font-size: 16px;
+                    }
+                    @include md{}
+                    @include lg{
+                        font-size: 17px;
+                    }
+                    @include xl{
+                        font-size: 20px;
+                    }
+                }
+                & .progressLine{
+                    & .progressbar{
+                        background-color: $theme1 !important;
+                    }
+                }
+            }
+        }
+        & .txtSection{
+            & .head{
+                font-size: 16px;
+                font-weight: 600;
+                color: $theme1;
+            }
+            & .mainHead{
+                font-size: 25px;
+                font-weight: 600;
+                line-height: 105%;
+                @include sm{}
+                @include md{
+                    font-size: 35px;
+                }
+                @include lg{
+                    font-size: 35px;
+                }
+                @include xl{
+                    font-size: 45px;
+                }
+                @include xxl{}
+            }
+            & .description{
+                font-size: 16px;
+                opacity: 0.7;
+                @include ellipsis(4);
+            }
+            & .mainCard{
+                border: 1px solid darkgray;
+                padding: 10px;
+                border-radius: 10px;
+                & .CardImg{
+                    height: 40px;
+                    width: 40px;
+                    filter: brightness(0);
+                    transition: all .3s ease-in-out;
+                }
+                & .name{
+                    font-size: 20px;
+                    font-weight: 500;
+                    transition: all .3s ease-in-out;
+                }
+                & .work{
+                    font-size: 17px;
+                    opacity: 0.7;
+                    line-height: 120%;
+                }
+                &:hover{
+                    & .CardImg{
+                        filter: none;
+                    }
+                    & .name{
+                        color: $theme1;
+                    }
+                }
+            }
+        }
+    }
+// choose Section Ends
+
+// team Section Start
+    .teamSection{
+        & .head{
+            font-size: 17px;
+            line-height: 120%;
+            font-weight: 500;
+            text-transform: uppercase;
+            @include sm{
+                font-size: 26px;
+                }
+                @include md{
+                font-size: 30px;
+                }
+                @include lg{
+                font-size: 35px;
+                }
+                @include xl{
+                font-size: 40px;
+                }
+                @include xxl{
+                font-size: 40px;
+                }
+        }
+        & .subHead{
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 120%;
+            color: $theme1;
+            @include sm{
+                font-size: 15px;
+                }
+                @include md{
+                font-size: 16px;
+                }
+                @include lg{
+                font-size: 16px;
+                }
+                @include xl{
+                font-size: 18px;
+                }
+                @include xxl{
+                font-size: 18px;
+            }
+        }
+        & .teamtextImg{
+        & .teamImage{
+            aspect-ratio: 5/6;
+        }
+        & .hidden{
+            opacity: 0;
+            visibility: hidden;
+            transition: all .5s ease-in-out;
+            & .position{
+                color: $theme1;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            & .name{
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            & .description{
+                font-size: 14px;
+                @include sm{}
+                @include md{}
+                @include lg{
+                line-height: 150%;
+                }
+                @include xl{
+                    line-height: 200%;
+                }
+                @include xxl{}
+            }
+            & .socialLinks{
+                transition: all .3s ease-in-out;
+                & .socialLinksLi{
+                    height: 20px;
+                    width: 20px;
+                    filter: brightness(0);
+                    display: flex;
+                    align-items: center;
+                    transition: all .3s ease-in-out;
+                    @include sm{}
+                    @include md{}
+                    @include lg{
+                        height: 20px;
+                        width: 20px;
+                    }
+                    @include xl{
+                        height: 40px;
+                        width: 40px;
+                    }
+                    @include xxl{}
+                    & .socialLinksanc{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 2px solid black;
+                        border-radius: 50%;
+                        padding: 10px;
+                        transition: all .3s ease-in-out;
+                    }
+                    &:hover{
+                        
+                            filter: none;
+                            & .socialLinksanc{
+                                border-color: $theme1 !important;
+                                background-color: rgba(211, 211, 211, 0.318);
+                            
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            & .hidden{
+                opacity: 1;
+                visibility: visible;
+                
+            }
+        }
+    }
+    }
+// team Section Ends
+
+// Footer Start
+    .footerSection{
+        & .head{
+            font-size: 16px;
+            font-weight: 600;
+            color: $white;
+            @include sm{}
+            @include md{
+            font-size: 18px;
+            }
+            @include lg{
+            font-size: 20px;
+            }
+            @include xl{}
+            @include xxl{}
+        }
+        & .subHead{
+            font-size: 16px;
+            font-weight: 500;
+            opacity: 0.6;
+            color: $white;
+        }
+        & .socialLinks{
+            & .socialLinksLi{
+                    height: 30px;
+                    width: 35px;
+                    transition: all .3s ease-in-out;
+                    @include xl{
+                        height: 30px;
+                        width: 35px;
+                    }
+                    @include xxl{
+                        height: 40px;
+                        width: 40px;
+                    }
+                & .socialLinksanc{
+                    filter: brightness(0) contrast(0);
+                    border: 2px solid lightgray;
+                    border-radius: 50%;
+                    display: flex;
+                    padding: 10px;
+                    transition: all .3s ease-in-out;
+                }
+                &:hover{
+                    & .socialLinksanc{
+                        filter: none;
+                    }
+                }
+            }
+        }
+        & .socialList{
+            & .socialListli{
+                transition: all .3s ease-in-out;
+                & .socialListanc{
+                    transition: all .3s ease-in-out;
+                    & .iconImg{
+                        height: 15px;
+                        width: 15px;
+                        display: flex;
+                        transition: all .3s ease-in-out;
+                        filter: brightness(0) contrast(0);
+                        @include md{
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                    & .text{
+                        font-weight: 500;
+                        color: $white;
+                        opacity: 0.6;
+                        font-size: 14px;
+                        transition: all .3s ease-in-out;
+                        @include md{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                &:hover{
+                    & .iconImg{
+                        filter: none;
+                    }
+                    & .text{
+                        color: $white !important;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+// Footer Ends
+
+// sideButton Section start
+    .sideButtonSection{
+        & .icon{
+            height: 45px;
+            width: 45px;
+            transform: rotate(-90deg);
+            background-color: $theme1;
+            padding: 5px 10px ; 
+            position: fixed;
+            bottom: 0%;
+            right: 0%;
+            margin: 0 70px 50px 0;
+            z-index: 50;
+        }
+    }
+// sideButton Section Ends 
